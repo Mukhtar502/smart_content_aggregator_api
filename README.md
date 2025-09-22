@@ -20,9 +20,11 @@ Make sure you have these installed on your computer:
 
 1. **Clone or download this project**
 
-   on bash
-   git clone <your-repo-url>
+   ```bash
+   git clone https://github.com/Mukhtar502/smart_content_aggregator_api.git
    cd smart_content_aggregator_api
+
+   ```
 
 2. **Install the required packages**
 
@@ -32,9 +34,12 @@ Make sure you have these installed on your computer:
 3. **Set up your database connection**
 
    - Create a file called `.env` in the main folder
-   - Add this line (replace with your MongoDB connection):
+   - Add these lines (replace with your MongoDB connection string):
 
-   DATABASE_URL=mongodb://localhost:27017/content_aggregator
+   ```
+   PORT=8005
+   MONGO_URI=mongodb://localhost:27017/your_database_name
+   ```
 
 4. **Build and start the server**
 
